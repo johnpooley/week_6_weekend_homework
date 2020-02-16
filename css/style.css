@@ -1,5 +1,7 @@
-body {background-color: grey}
+body {background-color: grey
+}
 
+#photo {border-radius: 50%}
 
 h1 {
   color: red;

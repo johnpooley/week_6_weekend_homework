@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Rimmerworld</title>
-    <script src="js/app.js" charset="utf-8">js</script>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Rimmerworld</title>
+  <script src="js/app.js" charset="utf-8">js</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    <h1>hello Rimmerworld!</h1>
+<body>
+  <h1>hello Rimmerworld!</h1>
 
-    <form class="mainForm" action="index.html" method="post" id="add-new-record">
+  <img id ="photo" src="https://vignette.wikia.nocookie.net/the-red-dwarf/images/1/16/Arnold_Rimmer_Page.jpg" alt="Arnie">
 
-      <div class="mainForm">
+  <form class="mainForm" action="index.html" method="post" id="add-new-record">
+
+    <div class="mainForm">
 
       <label for="albumTitle">Album Title</label>
       <input type="text" name="albumTitle" id="albumTitle" value="">
-      </div>
+    </div>
 
-      <label for="artistName">Artist Name</label>
-      <input type="text" name="artistName" id="artistName" value="">
+    <label for="artistName">Artist Name</label>
+    <input type="text" name="artistName" id="artistName" value="">
+
+    <div class="mainForm">
+      <label for="year">Year Released</label>
+      <input type="text" name="year" value="">
+    </div>
+
+    <div class="mainForm">
+      <label for="instrument">What is the best organ?</label>
+      <select id="instrument" name="instrument">
+        <option value="hammond organ">hammond organ</option>
+      </select>
+    </div>
 
 
-      <input type="submit" value="save"/>
+    <input type="submit" value="save"/>
 
-    </form>
-    <br>
-    <br>
-    <ul id="record-list">
-      <p>current records</p>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+  </form>
+  <br>
+  <br>
+  <ul id="record-list">
+    <p>current records</p>
+  </ul>
 
-  </body>
+<button type="button" id="deleteAll">Delete All</button>
+
+</body>
 </html>
